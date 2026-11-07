@@ -1,0 +1,13 @@
+# 客服工单处理 Agent（LangGraph 状态机版）
+# 核心依赖
+langgraph>=0.2.0
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+openai>=1.30.0        # 调用 DeepSeek / OpenAI 兼容 API（必须配置 LLM_API_KEY）
+redis>=5.0.0          # 短期记忆；未启动 Redis 时自动降级为内存实现
+pytest>=8.0.0
+streamlit>=1.30.0     # Web UI 主入口（浏览器对话）
+
+# 可选依赖（缺失时功能自动降级，不影响核心流程）
+chromadb>=0.5.0       # 向量库；不可用时检索降级为内存向量
+langfuse>=5.0.0       # 可观测性 Trace（v5 OTel API）；未配置 Key 时降级为本地 JSON 日志

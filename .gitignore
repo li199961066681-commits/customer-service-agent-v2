@@ -1,0 +1,29 @@
+# ===== 密钥 / 环境 =====
+.env
+.env.*
+!.env.example
+venv/
+.venv/
+
+# ===== IDE / 缓存 =====
+.idea/
+.screenshots/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+.streamlit/
+
+# ===== 运行数据（不提交） =====
+data/tickets.db
+data/chroma/
+data/trace_log.jsonl
+data/_*.json
+data/streamlit.*
+*.log
+
+# ===== 其他 =====
+.DS_Store
+Thumbs.db
+*.zip

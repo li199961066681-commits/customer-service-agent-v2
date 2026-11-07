@@ -1,0 +1,13 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.idea/
+.git/
+.env
+.env.example
+data/chroma/
+data/tickets.db
+data/trace_log.jsonl
+data/_*.json
